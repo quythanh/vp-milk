@@ -1,0 +1,164 @@
+[
+    {
+        "name": "Sữa bột Vinamilk Dielac Grow Plus 1+",
+        "price": "350,000",
+        "thumbnail": "grow-plus.png",
+        "category": "kid"
+    },
+    {
+        "name": "Sữa bột Vinamilk Dielac Grow Plus 2+",
+        "price": "350,000",
+        "thumbnail": "grow-plus-2+.png",
+        "category": "kid"
+    },
+    {
+        "name": "Sữa bột Vinamilk Dielac Alpha Gold 1",
+        "price": "350,000",
+        "thumbnail": "Dielac-alpha-gold-1.png",
+        "category": "baby"
+    },
+    {
+        "name": "Sữa bột Vinamilk Dielac Alpha Gold 2",
+        "price": "350,000",
+        "thumbnail": "Dielac-alpha-gold-2.png",
+        "category": "baby"
+    },
+    {
+        "name": "Sữa bột Vinamilk Dielac Alpha Gold 3",
+        "price": "350,000",
+        "thumbnail": "Dielac-alpha-gold-3.png",
+        "category": "kid"
+    },
+    {
+        "name": "Sữa bột Vinamilk Dielac Alpha Gold 4",
+        "price": "350,000",
+        "thumbnail": "Dielac-alpha-gold-4.png",
+        "category": "kid"
+    },
+    {
+        "name": "Sữa bột Vinamilk ColosGold 1",
+        "price": "20,000",
+        "thumbnail": "colosgold-1.png",
+        "category": "baby"
+    },
+    {
+        "name": "Sữa bột Vinamilk ColosGold 2",
+        "price": "20,000",
+        "thumbnail": "colosgold-2.png",
+        "category": "kid"
+    },
+    {
+        "name": "Sữa bột Vinamilk ColosGold 3",
+        "price": "20,000",
+        "thumbnail": "colosgold-3.png",
+        "category": "kid"
+    },
+    {
+        "name": "Sữa bột Optimum Gold 1",
+        "price": "20,000",
+        "thumbnail": "optimumgold-1.png",
+        "category": "baby"
+    },
+    {
+        "name": "Sữa bột Optimum Gold 2",
+        "price": "20,000",
+        "thumbnail": "optimumgold-2.png",
+        "category": "baby"
+    },
+    {
+        "name": "Sữa bột Optimum Gold 3",
+        "price": "20,000",
+        "thumbnail": "optimumgold-3.png",
+        "category": "kid"
+    },
+    {
+        "name": "Sữa bột Vinamilk Dielac Mama Gold Vani 400g",
+        "price": "350,000",
+        "thumbnail": "diealac-mama-gold-vani-400g.png",
+        "category": "Mom"
+    },
+    {
+        "name": "Sữa bột Vinamilk Dielac Mama Gold Vani 900g",
+        "price": "350,000",
+        "thumbnail": "diealac-mama-gold-vani-900g.png",
+        "category": "Mom"
+    },
+    {
+        "name": "Sữa bột Optimum Mama Gold 400g",
+        "price": "20,000",
+        "thumbnail": "sua-bot-optimum-mama-gold-400g.png",
+        "category": "Mom"
+    },
+    {
+        "name": "Sữa bột Optimum Mama Gold 900g",
+        "price": "20,000",
+        "thumbnail": "optimum-mama-gold-900g.png",
+        "category": "Mom"
+    },
+    {
+        "name": "Sữa bột Vinamilk Canxipro 400g",
+        "price": "350,000",
+        "thumbnail": "sua-bot-vinamilk-canxipro-hop-thiec-400g.png",
+        "category": "old"
+    },
+    {
+        "name": "Sữa bột Vinamilk Canxipro 900g",
+        "price": "350,000",
+        "thumbnail": "sua-bot-vinamilk-canxipro-hop-thiec-900g.png",
+        "category": "old"
+    },
+    {
+        "name": "Sữa bột Sure Prevent Gold 400g",
+        "price": "20,000",
+        "thumbnail": "Sure-Prevent-Gold-400g.png",
+        "category": "old"
+    },
+    {
+        "name": "Sữa bột Sure Prevent Gold 900g",
+        "price": "20,000",
+        "thumbnail": "Sure-Prevent-Gold-900g.png",
+        "category": "old"
+    },
+    {
+        "name": "Sữa bột kenko Hare 400g",
+        "price": "20,000",
+        "thumbnail": "Vinamilk-kenko-haru.png",
+        "category": "old"
+    },
+    {
+        "name": "Sữa bột kenko Hare 850g",
+        "price": "20,000",
+        "thumbnail": "Vinamilk-kenko-haru-850g.png",
+        "category": "old"
+    },
+    {
+        "name": "Sữa tươi tiệt trùng có đường Vinamilk 100% Sữa tươi - Thùng 48 bịch x 220ml",
+        "price": "350,000",
+        "thumbnail": "fino_100__thung_-_co_duong_-_48_bich_220ml.png",
+        "category": "rawmilk"
+    },
+    {
+        "name": "Sữa tươi tiệt trùng ít đường Vinamilk 100% Sữa tươi - Thùng 48 bịch x 220ml",
+        "price": "350,000",
+        "thumbnail": "fino_100__thung_-_it_duong_-_48_bich_220ml.png",
+        "category": "rawmilk"
+    },
+    {
+        "name": "Sữa tươi tiệt trùng không đường Vinamilk 100% Sữa tươi - Thùng 48 bịch x 220ml",
+        "price": "20,000",
+        "thumbnail": "fino_100__thung_-_khong_duong_-_48_bich_220ml.png",
+        "category": "rawmilk"
+    },
+    {
+        "name": "Sữa tươi tiệt trùng Vinamilk 100% Sôcôla - Thùng 48 hộp x 180ml",
+        "price": "20,000",
+        "thumbnail": "socola.png",
+        "category": "rawmilk"
+    },
+    {
+        "name": "Sữa tươi tiệt trùng Vinamilk 100% tách béo không đường - Thùng 48 hộp x 180ml",
+        "price": "20,000",
+        "thumbnail": "thung_ttt_it_beo_khong_duong_vinamilk_180ml.png",
+        "category": "rawmilk"
+    }
+]

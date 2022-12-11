@@ -1,3 +1,5 @@
+import {renderProducts, getProducts} from "./utils.js";
+
 const Header = () => {
     const header = document.createElement('header');
     header.className = 'navbar';
@@ -15,7 +17,7 @@ const Header = () => {
             <div class="phone-box">
                 <a href="#"><button class="button-phone"><i class="fa-solid fa-phone-volume"></i></button></a>
                 <label for="support">
-                    Hỗ trợ khách hàng
+                    Hỗ trợ khách hàng <br />
                     <a href="#" class="number-phone">
                         19007158
                     </a>
@@ -25,10 +27,8 @@ const Header = () => {
             <div class="profile-box">
                 <a href="#"><button class="button-profile"><i class="fa-regular fa-user"></i></button></a>
                 <label for="login">
-                    Tài khoản
-                    <a href="login.html" class="login-file">
-                        Đăng nhập
-                    </a>
+                    Tài khoản <br />
+                    <a href="login.html" class="login-file">Đăng nhập</a>
                 </label>
             </div>
 
@@ -52,6 +52,14 @@ const Container = () => {
     const container = document.createElement('div');
     container.className = 'container';
     container.innerHTML = `
+        <select name="price-range" class="filter">
+            <option hidden> -- Chọn khoảng giá -- </option>
+            <option>0 - 100.000</option>
+            <option>100.000 - 200.000</option>
+            <option>200.000 - 300.000</option>
+            <option>300.000 - 400.000</option>
+        </select>
+
         <ul class="list">
             <li><a href="./mom.html">Sữa Cho Mẹ Mang Thai</a></li>
             <li><a href="./baby.html">Sữa Cho Bé Sở Sinh</a></li>
@@ -63,6 +71,13 @@ const Container = () => {
         <ul class="products"></ul>
     `;
     document.body.querySelector('.page-wrapper').append(container);
+
+    document.querySelector('.filter').addEventListener('change', e => {
+        let range = e.target.value.split(' - ').map(el => el.replace('.', '') - 0);
+        var listProducts = JSON.parse(localStorage.getItem('listProducts'));
+        listProducts = listProducts.filter(product => product['price'] >= range[0] && product['price'] <= range[1]);
+        renderProducts(listProducts);
+    })
 }
 
 const CreateApp = () => {

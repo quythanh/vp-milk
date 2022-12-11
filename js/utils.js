@@ -1,3 +1,7 @@
+const NumberFormat = (num) => {
+    return Intl.NumberFormat('it-IT', { style: 'currency', currency: 'VND' }).format(num)
+}
+
 const renderProducts = products => {
     document.querySelector("ul.products").innerHTML = products.map(product => `
         <li>
@@ -10,7 +14,7 @@ const renderProducts = products => {
                 </div>
                 <div class="product-info">
                     <a href="#" class="product-name">${product['name']}</a>
-                    <div class="product-price">${product['price']} VND</div>
+                    <div class="product-price">${NumberFormat(product['price'])}</div>
                 </div>
             </div>
         </li>
@@ -21,6 +25,7 @@ const renderProducts = products => {
 const getProducts = async (criteria = product => product) => {
     let res = await fetch("./data/products.json");
     let listProducts = await res.json();
+    localStorage.setItem('listProducts', JSON.stringify(listProducts.filter(criteria)));
     return listProducts.filter(criteria);
 }
 

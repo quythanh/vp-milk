@@ -3,11 +3,14 @@ const NumberFormat = (num) => {
 }
 
 const renderProducts = products => {
-    document.querySelector("ul.products").innerHTML = products.map(product => `
-        <li>
+    let listProducts = document.querySelector("ul.products");
+    listProducts.innerHTML = '';
+    products.map(product => {
+        var li = document.createElement('li');
+        li.innerHTML = `
             <div class="product-item">
                 <div class="product-top">
-                    <a href="#" class="product-thumb">
+                    <a href="detail.html" class="product-thumb">
                         <img src="img/${product['category']}/${product['thumbnail']}" alt="${product['name']}">
                     </a>
                     <a href="#" class="addtocart">Thêm vào giỏ hàng</a>
@@ -17,16 +20,22 @@ const renderProducts = products => {
                     <div class="product-price">${NumberFormat(product['price'])}</div>
                 </div>
             </div>
-        </li>
-    `).join("")
+        `;
+        listProducts.append(li);
+
+        li.querySelector('.product-thumb').addEventListener('click', e => {
+            localStorage.setItem("curID", product['id']);
+        })
+    })
 }
 
 
 const getProducts = async (criteria = product => product) => {
     let res = await fetch("./data/products.json");
     let listProducts = await res.json();
-    localStorage.setItem('listProducts', JSON.stringify(listProducts.filter(criteria)));
-    return listProducts.filter(criteria);
+    listProducts = listProducts.filter(criteria);
+    localStorage.setItem('listProducts', JSON.stringify(listProducts));
+    return listProducts;
 }
 
 const getParameterByName = (name, url = window.location.href) => {
@@ -38,4 +47,4 @@ const getParameterByName = (name, url = window.location.href) => {
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 
-export {renderProducts, getProducts, getParameterByName};
+export {renderProducts, getProducts, getParameterByName, NumberFormat};

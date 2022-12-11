@@ -1,5 +1,3 @@
-import {renderProducts, getProducts} from "./utils.js";
-
 const Header = () => {
     const header = document.createElement('header');
     header.className = 'navbar';
@@ -48,41 +46,21 @@ const Header = () => {
     document.body.querySelector('.page-wrapper').prepend(header);
 }
 
-const Container = () => {
-    const container = document.createElement('div');
-    container.className = 'container';
-    container.innerHTML = `
-        <select name="price-range" class="filter">
-            <option hidden> -- Chọn khoảng giá -- </option>
-            <option>0 - 100.000</option>
-            <option>100.000 - 200.000</option>
-            <option>200.000 - 300.000</option>
-            <option>300.000 - 400.000</option>
-        </select>
-
-        <ul class="list">
-            <li><a href="./mom.html">Sữa Cho Mẹ Mang Thai</a></li>
-            <li><a href="./baby.html">Sữa Cho Bé Sở Sinh</a></li>
-            <li><a href="./kid.html">Sữa Cho Trẻ</a></li>
-            <li><a href="./old.html">Sữa Cho Người Già</a></li>
-            <li><a href="./rawmilk.html">Sữa Tươi Tiệt Trùng 100%</a></li>
-        </ul>
-
-        <ul class="products"></ul>
+const Footer = () => {
+    const footer = document.createElement('footer');
+    footer.innerHTML = `
+        <a>
+            <i class='fas fa-map-marker-alt'></i>
+            MST: 0838338637
+            <br>
+            Địa chỉ: 273 An Dương Vương,Phường 3, Quận 5, Thành phố Hồ Chí Minh
+        </a>
+        <br /><br />
+        <div>
+            <img src="img/logo_bct.webp" width="200" height="76" alt="Logo bộ công thương">
+        </div>
     `;
-    document.body.querySelector('.page-wrapper').append(container);
-
-    document.querySelector('.filter').addEventListener('change', e => {
-        let range = e.target.value.split(' - ').map(el => el.replace('.', '') - 0);
-        var listProducts = JSON.parse(localStorage.getItem('listProducts'));
-        listProducts = listProducts.filter(product => product['price'] >= range[0] && product['price'] <= range[1]);
-        renderProducts(listProducts);
-    })
+    document.body.querySelector('.page-wrapper').append(footer);
 }
 
-const CreateApp = () => {
-    Header();
-    Container();
-}
-
-CreateApp();
+export {Header, Footer};

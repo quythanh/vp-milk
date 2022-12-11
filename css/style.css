@@ -19,24 +19,10 @@ body .auth-form {
   padding-top: 200px;
 }
 footer {
-  position: relative;
   width: 100%;
-  height: auto;
-  padding: 50px 100px;
+  padding: 15px 30px;
   background: #10416a;
-  display: block;
-  flex-wrap: wrap;
   color: #fff;
-  min-height: 416px;
-  margin-top: 1rem;
-  overflow: hidden;
-  top: 100%;
-}
-.single-contact {
-  display: flex;
-  align-items: baseline;
-  font-size: 15px;
-  margin-bottom: 10px;
 }
 .auth-form {
   width: 100%;
@@ -128,7 +114,7 @@ auth-form_socials {
   background: #59c8f4;
   display: flex;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 
 .navbar > * {
@@ -334,7 +320,9 @@ p {
 
 .container {
   position: relative;
-  margin-top: 90px;
+  margin-top: 85px;
+  padding-top: 10px;
+  min-height: calc(100vh - 164px - 85px);
 }
 ul.products {
   display: flex;
@@ -437,9 +425,6 @@ ul.products li .product-top a.addtocart {
 ul.products li:hover a.addtocart {
   bottom: 0px;
 }
-.detail-product {
-  display: flex;
-}
 
 /* ================ FILTER ================ */
 select.filter {
@@ -452,6 +437,7 @@ select.filter {
   border-radius: 7px;
   padding: 5px 12px;
   text-align: center;
+  z-index: 1;
 }
 
 ::-webkit-scrollbar {
